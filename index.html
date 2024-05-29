@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I am sober</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="greeting-message">
-      
-      <p class="greeting-primary">Przede wszystkim gratulacje!</p>
-      <p class="greeting-secondary">Właśnie zrobiłeś duży skok ku trzeźwości.</p>
-      
-    </div>
-  </header>
-  <section>
-    <p>Od czego pozostajesz wolny/a?</p>
-    <select id="addiction-type">
-      <option value="" disabled selected>Wybierz opcję poniżej</option>
-      <option value="alcohol">Alkohol</option>
-      <option value="drugs">Narkotyki</option>
-      <option value="pornography">Pornografia</option>
-    </select>
-  </section>
-  <section>
-    <p>Wybierz datę uwolnienia się od uzależnienia</p>
-    <input type="date" id="addiction-free" value="">
-  </section>
-  <script src="main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>I am sober</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="greeting-message">
+				<p class="greeting-primary">Przede wszystkim gratulacje!</p>
+				<p class="greeting-secondary">
+					Właśnie zrobiłeś duży skok ku trzeźwości.
+				</p>
+			</div>
+		</header>
+		<form id="sobriety-form">
+			<section>
+				<p>Od czego pozostajesz wolny/a?</p>
+				<select id="addiction-type" required>
+					<option value="" disabled selected>Wybierz opcję poniżej</option>
+					<option value="alcohol">Alkohol</option>
+					<option value="drugs">Narkotyki</option>
+					<option value="pornography">Pornografia</option>
+				</select>
+			</section>
+			<section>
+				<p>Wybierz datę uwolnienia się od uzależnienia</p>
+				<input type="date" id="addiction-free" required />
+				<p>Ile pieniędzy dziennie traciłeś na uzależnienie?</p>
+				<input type="number" min="0" id="addiction-cost" required/><span>PLN</span>
+				<button type="submit">Następne</button>
+			</section>
+		</form>
+		<script src="main.js"></script>
+	</body>
 </html>
