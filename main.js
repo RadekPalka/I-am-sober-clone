@@ -1,7 +1,9 @@
 const addictionTypeSelect = document.querySelector("#addiction-type")
 const addictionFreeDateInput = document.querySelector("#addiction-free")
 
-const defaultDate = new Date().toLocaleDateString('en-CA',{ year: 'numeric', month: '2-digit', day: '2-digit' }).replaceAll("/", "-")
+const defaultDate = new Date().toLocaleDateString('en-CA', {
+                      year: 'numeric', month: '2-digit', day: '2-digit' 
+                    })
 console.log(defaultDate)
 addictionFreeDateInput.value = defaultDate
 addictionTypeSelect.addEventListener("change", e=>{
