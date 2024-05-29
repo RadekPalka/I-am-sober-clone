@@ -1,0 +1,25 @@
+
+body{
+  font-family: sans-serif;
+  background-color: blue;
+}
+header{
+  height: 400px;
+}
+.greeting-message{
+  width: 50%;
+  height: 200px;
+  background-color: white;
+  margin: 100px auto;
+  border-radius: 15px;
+}
+.greeting-primary{
+  font-size: 20px;
+  padding: 15px 10px 5px 10px;
+  font-weight: 700;
+  text-align: center;
+}
+.greeting-secondary{
+  text-align: center;
+  padding: 0 10px;
+}
