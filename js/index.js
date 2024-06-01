@@ -7,6 +7,7 @@ const defaultDate = new Date().toLocaleDateString('en-CA', {
                     })
 
 addictionFreeDateInput.value = defaultDate
+addictionFreeDateInput.max = defaultDate
 
 
 sobrietyForm.addEventListener("submit", e=>{
