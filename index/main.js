@@ -17,4 +17,6 @@ sobrietyForm.addEventListener("submit", e=>{
     addictionCost : addictionCostInput.value
   }
   console.log(userData)
+  localStorage.setItem('userData', JSON.stringify(userData))
+  location.href= "../dashboard/dashboard.html"
 })

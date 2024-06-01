@@ -3,9 +3,7 @@ body{
   font-family: sans-serif;
   background-color: blue;
 }
-header{
-  height: 400px;
-}
+
 .greeting-message{
   width: 50%;
   height: 200px;
