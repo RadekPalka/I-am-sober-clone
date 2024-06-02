@@ -3,9 +3,9 @@ const addictionFreeDateInput = document.querySelector("#addiction-free")
 const sobrietyForm = document.querySelector("#sobriety-form")
 const addictionCostInput = document.querySelector("#addiction-cost")
 const defaultDate = new Date().toLocaleDateString('en-CA', {
-                      year: 'numeric', month: '2-digit', day: '2-digit' 
+                      year: 'numeric', month: '2-digit', day: '2-digit', hour :"2-digit", minute: "2-digit"
                     })
-
+console.log(defaultDate)
 addictionFreeDateInput.value = defaultDate
 addictionFreeDateInput.max = defaultDate
 
